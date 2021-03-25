@@ -32,8 +32,7 @@ if (juliaAge > age) {
 }
 
 // Sorting an Array ///////////////////////////////////////////
-// Exercise 1: Create an array with all the names of my class, sort the array alphabetically. Print the first element of the array. And the last one too.
-//print all the names using "for" loop
+// Exercise 1: Sorting an Array
 var namesOfClass = [
   'Ottavia',
   'Lucas',
@@ -52,4 +51,12 @@ console.log('Last person: ', namesOfClass[namesOfClass.length - 1]);
 
 for (let i = 0; i < namesOfClass.length; i++) {
   console.log(namesOfClass[i]);
+}
+
+// Exercise 2: Looping over an Array
+var studentsAges = [27, 33, 28, 24, 28, 33, 32, 25, 31];
+let j = 0;
+while (j < studentsAges.length) {
+  if (studentsAges[j] % 2 === 0) console.log(studentsAges[j]);
+  j++;
 }
