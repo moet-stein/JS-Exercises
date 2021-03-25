@@ -53,8 +53,8 @@ for (let i = 0; i < namesOfClass.length; i++) {
   console.log(namesOfClass[i]);
 }
 
-// Exercise 2: Looping over an Array
-var studentsAges = [27, 33, 28, 24, 28, 33, 32, 25, 31];
+// Exercise 2: Looping over an Array - prints even nums
+let studentsAges = [27, 33, 28, 24, 28, 33, 32, 25, 31];
 let j = 0;
 while (j < studentsAges.length) {
   if (studentsAges[j] % 2 === 0) console.log(studentsAges[j]);
@@ -75,3 +75,19 @@ function lowestNumber(array) {
 
 lowestNumber(studentsAges); //the lowest num is: 24
 lowestNumber([23, 100, -1, -18, 43, 29]); //the lowest num is: -18
+
+// Exercise 4: prints the biggest number of an array
+function biggestNumber(array) {
+  let biggestNum = array[0];
+  let i = 1;
+  while (i < array.length) {
+    if (biggestNum < array[i]) {
+      biggestNum = array[i];
+    }
+    i++;
+  }
+  console.log('the biggest num is: ', biggestNum);
+}
+
+biggestNumber([10, 30, 100]); //the biggest num is: 100
+biggestNumber(studentsAges); //the biggest num is: 33
