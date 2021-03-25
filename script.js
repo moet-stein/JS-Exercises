@@ -1,28 +1,28 @@
 console.log('Starting javascript...');
 
-// Exercise 1: Print my name
+// EXERCISE 1: Print my name
 var myName = 'Moe Steinmueller';
 console.log('my name is: ', myName);
 
-// Exercise 2: Print my age
+// EXERCISE 2: Print my age
 var age = 28;
 console.log('my age is: ', age);
 
-// Exercise 3: Calc. and Print the age difference
+// EXERCISE 3: Calc. and Print the age difference
 var juliaAge = 32;
 var ageDiff = age - juliaAge;
 console.log('Age difference is: ', ageDiff);
 
 // Writing code with conditionals//////////////////////////////////////
 
-// Exercise 4: compares the variable with my age with the number 21
+// EXERCISE 4: compares the variable with my age with the number 21
 if (age >= 21) {
   console.log('You are older than 21.');
 } else {
   console.log('You are NOT older than 21.');
 }
 
-// Exercise 5: compares Julia's age and my age
+// EXERCISE 5: compares Julia's age and my age
 if (juliaAge > age) {
   console.log('Julia is older than me.');
 } else if (juliaAge < age) {
@@ -32,7 +32,7 @@ if (juliaAge > age) {
 }
 
 // Sorting an Array ///////////////////////////////////////////
-// Exercise 1: Sorting an Array
+// EXERCISE 1: Sorting an Array
 var namesOfClass = [
   'Ottavia',
   'Lucas',
@@ -53,7 +53,7 @@ for (let i = 0; i < namesOfClass.length; i++) {
   console.log(namesOfClass[i]);
 }
 
-// Exercise 2: Looping over an Array - prints even nums
+// EXERCISE 2: Looping over an Array - prints even nums
 let studentsAges = [27, 33, 28, 24, 28, 33, 32, 25, 31];
 let j = 0;
 while (j < studentsAges.length) {
@@ -62,7 +62,7 @@ while (j < studentsAges.length) {
 }
 
 // Function that use Arrays /////////////////
-// Exercise 3: prints the lowest number of an array
+// EXERCISE 3: prints the lowest number of an array
 function lowestNumber(array) {
   let lowestNum = array[0];
   for (let i = 1; i < array.length; i++) {
@@ -76,7 +76,7 @@ function lowestNumber(array) {
 lowestNumber(studentsAges); //the lowest num is: 24
 lowestNumber([23, 100, -1, -18, 43, 29]); //the lowest num is: -18
 
-// Exercise 4: prints the biggest number of an array
+// EXERCISE 4: prints the biggest number of an array
 function biggestNumber(array) {
   let biggestNum = array[0];
   let i = 1;
@@ -91,3 +91,35 @@ function biggestNumber(array) {
 
 biggestNumber([10, 30, 100]); //the biggest num is: 100
 biggestNumber(studentsAges); //the biggest num is: 33
+
+// EXERCISE 5: prints the element of an array at the given index
+function printElAtIndex(array, index) {
+  console.log(array[index]);
+}
+printElAtIndex(
+  [
+    3,
+    6,
+    67,
+    6,
+    23,
+    11,
+    100,
+    8,
+    93,
+    0,
+    17,
+    24,
+    7,
+    1,
+    33,
+    45,
+    28,
+    33,
+    23,
+    12,
+    99,
+    100,
+  ],
+  1
+); //6
