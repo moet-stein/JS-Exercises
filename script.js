@@ -123,3 +123,51 @@ printElAtIndex(
   ],
   1
 ); //6
+
+// Exercise 6: print repeated numbers of an array
+// 1. putting each number as a key, and if the key already exists, add +1 to the property.
+// 2, check the key that has more than value 1. If there is more than 1, that means the number was repeated.
+// 3, the number is pushed as type of "number" to an array that's name is result.
+// 4. console.log the result.
+function printRepeatedNum(array) {
+  let object = {};
+  let result = [];
+  array.forEach((x) => {
+    if (object.hasOwnProperty(x)) {
+      object[x] += 1;
+    } else {
+      object[x] = 1;
+    }
+  });
+  for (x in object) {
+    if (object[x] > 1) {
+      result.push(parseInt(x));
+    }
+  }
+  console.log(result);
+}
+
+printRepeatedNum([
+  3,
+  6,
+  67,
+  6,
+  23,
+  11,
+  100,
+  8,
+  93,
+  0,
+  17,
+  24,
+  7,
+  1,
+  33,
+  45,
+  28,
+  33,
+  23,
+  12,
+  99,
+  100,
+]); //[6, 23, 33, 100]
