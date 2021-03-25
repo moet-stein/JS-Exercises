@@ -21,3 +21,12 @@ if (age >= 21) {
 } else {
   console.log('You are NOT older than 21.');
 }
+
+// Exercise 5: compares Julia's age and my age
+if (juliaAge > age) {
+  console.log('Julia is older than me.');
+} else if (juliaAge < age) {
+  console.log('Julia is younger than me.');
+} else {
+  console.log('I have the same age as Julia.');
+}
