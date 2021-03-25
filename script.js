@@ -13,7 +13,7 @@ var juliaAge = 32;
 var ageDiff = age - juliaAge;
 console.log('Age difference is: ', ageDiff);
 
-// Writing code with conditionals
+// Writing code with conditionals//////////////////////////////////////
 
 // Exercise 4: compares the variable with my age with the number 21
 if (age >= 21) {
@@ -29,4 +29,27 @@ if (juliaAge > age) {
   console.log('Julia is younger than me.');
 } else {
   console.log('I have the same age as Julia.');
+}
+
+// Sorting an Array ///////////////////////////////////////////
+// Exercise 1: Create an array with all the names of my class, sort the array alphabetically. Print the first element of the array. And the last one too.
+//print all the names using "for" loop
+var namesOfClass = [
+  'Ottavia',
+  'Lucas',
+  'Laura',
+  'Chirag',
+  'Denis',
+  'Michelle',
+  'Oded',
+  'Nathalia',
+  'Moe',
+];
+
+namesOfClass.sort();
+console.log('First person: ', namesOfClass[0]);
+console.log('Last person: ', namesOfClass[namesOfClass.length - 1]);
+
+for (let i = 0; i < namesOfClass.length; i++) {
+  console.log(namesOfClass[i]);
 }
