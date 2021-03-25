@@ -60,3 +60,18 @@ while (j < studentsAges.length) {
   if (studentsAges[j] % 2 === 0) console.log(studentsAges[j]);
   j++;
 }
+
+// Function that use Arrays /////////////////
+// Exercise 3: prints the lowest number of an array
+function lowestNumber(array) {
+  let lowestNum = array[0];
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] < lowestNum) {
+      lowestNum = array[i];
+    }
+  }
+  console.log('the lowest num is:', lowestNum);
+}
+
+lowestNumber(studentsAges); //the lowest num is: 24
+lowestNumber([23, 100, -1, -18, 43, 29]); //the lowest num is: -18
