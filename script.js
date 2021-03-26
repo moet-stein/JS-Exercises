@@ -198,7 +198,7 @@ function alphaOrder(str) {
 let orderMeCorrect = 'webmaster';
 console.log(alphaOrder(orderMeCorrect)); //abeemrstw
 
-// Exercise 3:
+// Exercise 3:make each word's first letter uppercase
 // 1. split each word putting them into an array
 // 2. map them with the first word as uppercase and combining the rest of the letters
 // 3. join them to make it a string again
@@ -210,3 +210,19 @@ function firstLetterUpper(str) {
 }
 let upperStr = 'prince of persia';
 console.log(firstLetterUpper(upperStr));
+
+// Exercise 4: find the longest word
+function findLongestWord(str) {
+  // Find the longest word and store the length of the word.
+  let lengthOfLonget = str
+    .split(' ')
+    .map((word) => word.length)
+    .sort((a, b) => b - a)[0];
+  // filter the array of words. Only the ones that match the length will be returned
+  return str
+    .split(' ')
+    .filter((x) => x.length === lengthOfLonget)
+    .join();
+}
+let finddingLongest = 'Web Development Tutorial';
+console.log(findLongestWord(finddingLongest)); //Development
