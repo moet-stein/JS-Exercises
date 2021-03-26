@@ -177,7 +177,7 @@ let myColor = ['Red', 'Green', 'White', 'Black'];
 let joinedEls = myColor.join(', ');
 console.log(joinedEls); // Red, Green, White, Black
 
-// JS STRING /////////////////////////////////////////
+// JS STRING //////////////////////////////////////////////////////////////////
 
 // Exercise 1
 // 1. change number x to a string to be able to be splitted & eventually to be reversed
@@ -188,3 +188,12 @@ function reverseNum(x) {
 }
 let num32443 = 32443;
 console.log(reverseNum(num32443)); //34423
+
+// Exercise 2: string in alphabetical order
+// 1. to sort, it should be an array. So, split the string
+// 2. Sort them. and join them so that it is again one word.
+function alphaOrder(str) {
+  return str.split('').sort().join('');
+}
+let orderMeCorrect = 'webmaster';
+console.log(alphaOrder(orderMeCorrect)); //abeemrstw
