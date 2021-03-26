@@ -290,3 +290,16 @@ console.log(findLongestWord(finddingLongest)); //Development
 // Exercise 1:
 const justMultiple = () => console.log(4 * 2);
 justMultiple();
+//
+//
+//
+// Exercise 2:
+const printMultiple = () => 8 * 3;
+const body = document.querySelector('body');
+const printNumP = document.createElement('p');
+printNumP.innerText = printMultiple();
+body.appendChild(printNumP);
+//
+//
+//
+// Exercise 3:
