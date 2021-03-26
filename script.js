@@ -176,3 +176,15 @@ printRepeatedNum([
 let myColor = ['Red', 'Green', 'White', 'Black'];
 let joinedEls = myColor.join(', ');
 console.log(joinedEls); // Red, Green, White, Black
+
+// JS STRING /////////////////////////////////////////
+
+// Exercise 1
+// 1. change number x to a string to be able to be splitted & eventually to be reversed
+// 2. split the string and reverse it, and join them together
+// 3. change the joined string to typeof "number"
+function reverseNum(x) {
+  return parseInt(x.toString().split('').reverse().join(''));
+}
+let num32443 = 32443;
+console.log(reverseNum(num32443)); //34423
