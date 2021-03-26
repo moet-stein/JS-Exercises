@@ -311,3 +311,21 @@ const printMultiple2 = (x, y) => {
 printMultiple2(3, 3);
 printMultiple2(100, 0.5);
 printMultiple2(3, 22);
+
+// Exercise 4: ??????
+const triangle = (x, y, z) => {
+  let result = 'The triangle is: ';
+  if (x === y && y === z) {
+    result += 'Equilateral';
+  } else if (x === y && y !== z) {
+    result += 'Isosceles';
+  } else if (x === z && x !== y) {
+    result += 'Isosceles';
+  } else if (y === z && y !== x) {
+    result += 'Isosceles';
+  } else {
+    result += 'Scalehe';
+  }
+  console.log(result);
+};
+triangle(4, 4, 2);
