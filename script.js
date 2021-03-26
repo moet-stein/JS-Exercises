@@ -303,3 +303,11 @@ body.appendChild(printNumP);
 //
 //
 // Exercise 3:
+const printMultiple2 = (x, y) => {
+  const printNumP2 = document.createElement('p');
+  printNumP2.innerText = x * y;
+  body.appendChild(printNumP2);
+};
+printMultiple2(3, 3);
+printMultiple2(100, 0.5);
+printMultiple2(3, 22);
