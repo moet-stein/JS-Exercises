@@ -14,6 +14,10 @@ var ageDiff = age - juliaAge;
 console.log('Age difference is: ', ageDiff);
 
 // Writing code with conditionals//////////////////////////////////////
+//
+//
+//
+//
 
 // EXERCISE 4: compares the variable with my age with the number 21
 if (age >= 21) {
@@ -21,7 +25,10 @@ if (age >= 21) {
 } else {
   console.log('You are NOT older than 21.');
 }
-
+//
+//
+//
+//
 // EXERCISE 5: compares Julia's age and my age
 if (juliaAge > age) {
   console.log('Julia is older than me.');
@@ -30,7 +37,10 @@ if (juliaAge > age) {
 } else {
   console.log('I have the same age as Julia.');
 }
-
+//
+//
+//
+//
 // Sorting an Array ///////////////////////////////////////////
 // EXERCISE 1: Sorting an Array
 var namesOfClass = [
@@ -52,7 +62,10 @@ console.log('Last person: ', namesOfClass[namesOfClass.length - 1]);
 for (let i = 0; i < namesOfClass.length; i++) {
   console.log(namesOfClass[i]);
 }
-
+//
+//
+//
+//
 // EXERCISE 2: Looping over an Array - prints even nums
 let studentsAges = [27, 33, 28, 24, 28, 33, 32, 25, 31];
 let j = 0;
@@ -60,7 +73,12 @@ while (j < studentsAges.length) {
   if (studentsAges[j] % 2 === 0) console.log(studentsAges[j]);
   j++;
 }
-
+//
+//
+//
+//
+//
+//
 // Function that use Arrays /////////////////
 // EXERCISE 3: prints the lowest number of an array
 function lowestNumber(array) {
@@ -75,7 +93,12 @@ function lowestNumber(array) {
 
 lowestNumber(studentsAges); //the lowest num is: 24
 lowestNumber([23, 100, -1, -18, 43, 29]); //the lowest num is: -18
-
+//
+//
+//
+//
+//
+//
 // EXERCISE 4: prints the biggest number of an array
 function biggestNumber(array) {
   let biggestNum = array[0];
@@ -91,7 +114,12 @@ function biggestNumber(array) {
 
 biggestNumber([10, 30, 100]); //the biggest num is: 100
 biggestNumber(studentsAges); //the biggest num is: 33
-
+//
+//
+//
+//
+//
+//
 // EXERCISE 5: prints the element of an array at the given index
 function printElAtIndex(array, index) {
   console.log(array[index]);
@@ -123,7 +151,12 @@ printElAtIndex(
   ],
   1
 ); //6
-
+//
+//
+//
+//
+//
+//
 // Exercise 6: print repeated numbers of an array
 // 1. putting each number as a key, and if the key already exists, add +1 to the property.
 // 2, check the key that has more than value 1. If there is more than 1, that means the number was repeated.
@@ -171,12 +204,19 @@ printRepeatedNum([
   99,
   100,
 ]); //[6, 23, 33, 100]
-
+//
+//
+//
+//
 // Exercise 7:join all elements
 let myColor = ['Red', 'Green', 'White', 'Black'];
 let joinedEls = myColor.join(', ');
 console.log(joinedEls); // Red, Green, White, Black
-
+//
+//
+//
+//
+//
 // JS STRING //////////////////////////////////////////////////////////////////
 
 // Exercise 1
@@ -188,6 +228,10 @@ function reverseNum(x) {
 }
 let num32443 = 32443;
 console.log(reverseNum(num32443)); //34423
+//
+//
+//
+//
 
 // Exercise 2: string in alphabetical order
 // 1. to sort, it should be an array. So, split the string
@@ -197,7 +241,14 @@ function alphaOrder(str) {
 }
 let orderMeCorrect = 'webmaster';
 console.log(alphaOrder(orderMeCorrect)); //abeemrstw
-
+//
+//
+//
+//
+//
+//
+//
+//
 // Exercise 3:make each word's first letter uppercase
 // 1. split each word putting them into an array
 // 2. map them with the first word as uppercase and combining the rest of the letters
@@ -210,7 +261,12 @@ function firstLetterUpper(str) {
 }
 let upperStr = 'prince of persia';
 console.log(firstLetterUpper(upperStr));
-
+//
+//
+//
+//
+//
+//
 // Exercise 4: find the longest word
 function findLongestWord(str) {
   // Find the longest word and store the length of the word.
