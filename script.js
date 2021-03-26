@@ -171,3 +171,8 @@ printRepeatedNum([
   99,
   100,
 ]); //[6, 23, 33, 100]
+
+// Exercise 7:join all elements
+let myColor = ['Red', 'Green', 'White', 'Black'];
+let joinedEls = myColor.join(', ');
+console.log(joinedEls); // Red, Green, White, Black
