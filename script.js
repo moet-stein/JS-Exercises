@@ -197,3 +197,16 @@ function alphaOrder(str) {
 }
 let orderMeCorrect = 'webmaster';
 console.log(alphaOrder(orderMeCorrect)); //abeemrstw
+
+// Exercise 3:
+// 1. split each word putting them into an array
+// 2. map them with the first word as uppercase and combining the rest of the letters
+// 3. join them to make it a string again
+function firstLetterUpper(str) {
+  return str
+    .split(' ')
+    .map((w) => w[0].toUpperCase() + w.slice(1))
+    .join(' ');
+}
+let upperStr = 'prince of persia';
+console.log(firstLetterUpper(upperStr));
