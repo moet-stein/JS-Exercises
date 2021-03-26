@@ -282,3 +282,11 @@ function findLongestWord(str) {
 }
 let finddingLongest = 'Web Development Tutorial';
 console.log(findLongestWord(finddingLongest)); //Development
+
+//
+//
+//
+// Extra: Function exercises
+// Exercise 1:
+const justMultiple = () => console.log(4 * 2);
+justMultiple();

@@ -27,9 +27,11 @@ function addMultTable(rows, cols) {
   // creating a table
   var body = document.body,
     tbl = document.createElement('table');
+  // styling <table>
   tbl.style.width = '100px';
   tbl.style.border = '1px solid orange';
 
+  // Looping to create a row with columns
   for (var i = 0; i < rows; i++) {
     var tr = tbl.insertRow();
     for (var j = 0; j < cols; j++) {
