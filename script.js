@@ -329,3 +329,23 @@ const triangle = (x, y, z) => {
   console.log(result);
 };
 triangle(4, 4, 2);
+//
+//
+//
+//
+// Exercise 5:
+const aTo1 = (arr) => arr.map((x) => (x === 'a' ? 1 : x));
+console.log(aTo1(['J', 'a', 'v', 'a', 's', 'c', 'r', 'i', 'p', 't']));
+// another solution
+const aTo12 = (arr) => {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 'a') {
+      result.push(1);
+    } else {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+};
+console.log(aTo12(['J', 'a', 'v', 'a', 's', 'c', 'r', 'i', 'p', 't']));
