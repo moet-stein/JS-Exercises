@@ -378,3 +378,18 @@ const addEvenPositions = (arr) =>
     .reduce((a, b) => a + b);
 let numsArr3 = [1, 2, 8, 3, 2, 3, 4];
 console.log(addEvenPositions(numsArr3)); // 14 (8 + 2+ 4)
+//
+//
+//
+// Exercise 9
+const tellEvenNumBefore = (num) => {
+  let result = [];
+  for (let i = num - 1; i > 0; i--) {
+    if (i % 2 === 0) {
+      result.push(i);
+    }
+  }
+  return result.sort((a, b) => a - b);
+};
+let num = 9;
+console.log(tellEvenNumBefore(num)); // [2, 4, 6, 8]
