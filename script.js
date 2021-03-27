@@ -358,3 +358,11 @@ let numsArr = [3, 12, 9, 34, 10];
 console.log(sumOfArray(numsArr)); // 68
 const smallestOfArray = (arr) => arr.sort((a, b) => a - b)[arr.length - 1];
 console.log(smallestOfArray(numsArr)); //34
+//
+//
+//
+// Exercise 7
+const addEvenNums = (arr) =>
+  arr.filter((x) => x % 2 === 0).reduce((a, b) => a + b);
+let numsArr2 = [1, 2, 8, 3, 2];
+console.log(addEvenNums(numsArr2)); //12 (2 + 8 + 2)
