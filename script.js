@@ -393,3 +393,17 @@ const tellEvenNumBefore = (num) => {
 };
 let num = 9;
 console.log(tellEvenNumBefore(num)); // [2, 4, 6, 8]
+//
+//
+//
+// Exercise 10
+const oddNumBetween = (x, y) => {
+  let result = [];
+  for (let i = x; i <= y; i++) {
+    if (i % 2) {
+      result.push(i);
+    }
+  }
+  return result;
+};
+console.log(oddNumBetween(1, 13)); //[1, 3, 5, 7, 9, 11, 13]
