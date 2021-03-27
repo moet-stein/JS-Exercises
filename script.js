@@ -366,3 +366,15 @@ const addEvenNums = (arr) =>
   arr.filter((x) => x % 2 === 0).reduce((a, b) => a + b);
 let numsArr2 = [1, 2, 8, 3, 2];
 console.log(addEvenNums(numsArr2)); //12 (2 + 8 + 2)
+//
+//
+//
+// Exercise 8
+const addEvenPositions = (arr) =>
+  arr
+    // filter so that only even index numbers are in the arr
+    .filter((x, index) => index % 2 === 0 && index !== 0)
+    // add them up
+    .reduce((a, b) => a + b);
+let numsArr3 = [1, 2, 8, 3, 2, 3, 4];
+console.log(addEvenPositions(numsArr3)); // 14 (8 + 2+ 4)
