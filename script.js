@@ -349,3 +349,12 @@ const aTo12 = (arr) => {
   return result;
 };
 console.log(aTo12(['J', 'a', 'v', 'a', 's', 'c', 'r', 'i', 'p', 't']));
+//
+//
+//
+// Exercise 6
+const sumOfArray = (arr) => arr.reduce((a, b) => a + b);
+let numsArr = [3, 12, 9, 34, 10];
+console.log(sumOfArray(numsArr)); // 68
+const smallestOfArray = (arr) => arr.sort((a, b) => a - b)[arr.length - 1];
+console.log(smallestOfArray(numsArr)); //34
