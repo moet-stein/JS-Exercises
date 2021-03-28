@@ -39,9 +39,8 @@ function addMultTable(rows, cols) {
 }
 addMultTable(4, 8);
 
+// Creating toggle button
 const button = document.createElement('button');
-// button.setAttribute('id', 'btn');
-// const btn = document.getElementById('btn');
 button.innerHTML = 'TOGGLE';
 button.style.margin = ' 10px';
 body.appendChild(button);

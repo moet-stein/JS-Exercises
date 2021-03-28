@@ -177,10 +177,9 @@ function printRepeatedNum(array) {
       result.push(parseInt(x));
     }
   }
-  console.log(result);
+  console.log('printRepeatedNum', result);
 }
-
-printRepeatedNum([
+let longNums = [
   3,
   6,
   67,
@@ -203,7 +202,21 @@ printRepeatedNum([
   12,
   99,
   100,
-]); //[6, 23, 33, 100]
+];
+printRepeatedNum(longNums); //[6, 23, 33, 100]
+
+// *************SOLUTION 2'**************//
+const findDuplicates = (arr) => {
+  let sorted_arr = arr.slice().sort();
+  let results = [];
+  for (let i = 0; i < sorted_arr.length - 1; i++) {
+    if (sorted_arr[i + 1] == sorted_arr[i]) {
+      results.push(sorted_arr[i]);
+    }
+  }
+  console.log('findDuplicates', results);
+};
+findDuplicates(longNums);
 //
 //
 //
