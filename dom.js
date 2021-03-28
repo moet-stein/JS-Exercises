@@ -11,7 +11,6 @@ function addBands(arr) {
 }
 
 let favoriteBands = ['King Gnu', 'Flumpool', 'Radwinmps'];
-addBands(favoriteBands);
 //
 //
 //
@@ -25,21 +24,34 @@ function addMultTable(rows, cols) {
   title.innerHTML = 'Creating a Table';
 
   // creating a table
-  var body = document.body,
-    tbl = document.createElement('table');
-  // styling <table>
-  tbl.style.width = '100px';
-  tbl.style.border = '1px solid orange';
+  tbl = document.createElement('table');
 
   // Looping to create a row with columns
-  for (var i = 0; i < rows; i++) {
-    var tr = tbl.insertRow();
-    for (var j = 0; j < cols; j++) {
-      var td = tr.insertCell();
+  for (let i = 0; i < rows; i++) {
+    const tr = tbl.insertRow();
+    for (let j = 0; j < cols; j++) {
+      let td = tr.insertCell();
       td.appendChild(document.createTextNode('EMPTY'));
-      td.style.border = '1px solid green';
+      td.style.border = '2px solid green';
     }
   }
   body.appendChild(tbl);
 }
 addMultTable(4, 8);
+
+const button = document.createElement('button');
+// button.setAttribute('id', 'btn');
+// const btn = document.getElementById('btn');
+button.innerHTML = 'TOGGLE';
+button.style.margin = ' 10px';
+body.appendChild(button);
+
+function toggle() {
+  const table = document.querySelector('table');
+  if (table.style.display === 'none') {
+    table.style.display = 'block';
+  } else {
+    table.style.display = 'none';
+  }
+}
+button.addEventListener('click', toggle);
