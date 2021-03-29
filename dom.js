@@ -11,7 +11,7 @@ function addBands(arr) {
 }
 
 let favoriteBands = ['King Gnu', 'Flumpool', 'Radwinmps'];
-//
+//addBands(favoriteBands)
 //
 //
 //Exercise 2: add a table
