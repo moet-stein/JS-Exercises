@@ -402,11 +402,16 @@ console.log(
 //
 //
 // Exercise 6
-const sumOfArray = (arr) => arr.reduce((a, b) => a + b);
 let numsArr = [3, 12, 9, 34, 10];
+//
+const sumOfArray = (arr) => arr.reduce((a, b) => a + b);
 console.log(sumOfArray(numsArr)); // 68
-const smallestOfArray = (arr) => arr.sort((a, b) => a - b)[arr.length - 1];
-console.log(smallestOfArray(numsArr)); //34
+//
+const smallestOfArray = (arr) => arr.sort((a, b) => a - b)[0];
+console.log(smallestOfArray(numsArr)); //3
+//
+const smallestOfArray2 = (arr) => Math.min(...arr);
+console.log('smallestOfArray2', smallestOfArray2(numsArr)); //3
 //
 //
 //
