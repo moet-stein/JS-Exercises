@@ -219,9 +219,11 @@ printRepeatedNum(longNums); //[6, 23, 33, 100]
 
 // *************SOLUTION 2'**************//
 const findDuplicates = (arr) => {
-  let sorted_arr = arr.slice().sort();
+  // Make a copy of arr, and sort
+  let sorted_arr = arr.slice().sort((a, b) => a - b);
   let results = [];
   for (let i = 0; i < sorted_arr.length - 1; i++) {
+    // check if the number in the sorted array is the same number that is one after the num
     if (sorted_arr[i + 1] == sorted_arr[i]) {
       results.push(sorted_arr[i]);
     }
@@ -307,6 +309,21 @@ function findLongestWord(str) {
 }
 let finddingLongest = 'Web Development Tutorial';
 console.log(findLongestWord(finddingLongest)); //Development
+
+//*********** solution 2 & 3***************//
+function findLongestWord2(str) {
+  let splitStr = str.split(' ');
+  let longestWord = splitStr.sort((a, b) => b.length - a.length);
+  return longestWord[0];
+}
+console.log('findLongestWord2(str):', findLongestWord2(finddingLongest));
+//
+//
+// Just make the above function in one line
+function findLongestWord3(str) {
+  return str.split(' ').sort((a, b) => b.length - a.length)[0];
+}
+console.log('findLongestWord3(str):', findLongestWord3(finddingLongest));
 
 //
 //
