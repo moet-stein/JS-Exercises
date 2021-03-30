@@ -91,8 +91,14 @@ function lowestNumber(array) {
   console.log('the lowest num is:', lowestNum);
 }
 
+function lowestNumber2(array) {
+  console.log('Math.min() =>', Math.min(...array));
+}
+
 lowestNumber(studentsAges); //the lowest num is: 24
 lowestNumber([23, 100, -1, -18, 43, 29]); //the lowest num is: -18
+lowestNumber2(studentsAges); //Math.min() => 24
+lowestNumber2([23, 100, -1, -18, 43, 29]); //Math.min() => -18
 //
 //
 //
