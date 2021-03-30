@@ -392,6 +392,13 @@ const aTo12 = (arr) => {
 };
 console.log(aTo12(['J', 'a', 'v', 'a', 's', 'c', 'r', 'i', 'p', 't']));
 //
+const aToOne3 = (arr) => arr.join('').replaceAll('a', 1).split('');
+console.log(
+  'aToOne3',
+  aToOne3(['J', 'a', 'v', 'a', 's', 'c', 'r', 'i', 'p', 't'])
+); //aToOne3 (10) ["J", "1", "v", "1", "s", "c", "r", "i", "p", "t"]
+//This solution output "1" as string
+//
 //
 //
 // Exercise 6
