@@ -118,8 +118,14 @@ function biggestNumber(array) {
   console.log('the biggest num is: ', biggestNum);
 }
 
+function biggestNumber2(array) {
+  console.log('Math.max() => ', Math.max(...array));
+}
+
 biggestNumber([10, 30, 100]); //the biggest num is: 100
 biggestNumber(studentsAges); //the biggest num is: 33
+biggestNumber2([10, 30, 100]); //Math.max() =>  100
+biggestNumber2(studentsAges); //Math.max() =>  33
 //
 //
 //
