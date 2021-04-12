@@ -59,8 +59,13 @@ namesOfClass.sort();
 console.log('First person: ', namesOfClass[0]);
 console.log('Last person: ', namesOfClass[namesOfClass.length - 1]);
 
+// oprtion 1 loop
 for (let i = 0; i < namesOfClass.length; i++) {
   console.log(namesOfClass[i]);
+}
+// option 2 loop
+for (const name of namesOfClass) {
+  console.log(name);
 }
 //
 //
@@ -70,7 +75,8 @@ for (let i = 0; i < namesOfClass.length; i++) {
 let studentsAges = [27, 33, 28, 24, 28, 33, 32, 25, 31];
 let j = 0;
 while (j < studentsAges.length) {
-  if (studentsAges[j] % 2 === 0) console.log(studentsAges[j]);
+  if (studentsAges[j] % 2 === 0)
+    console.log('Even studentsAges', studentsAges[j]);
   j++;
 }
 //
